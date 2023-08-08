@@ -1,7 +1,8 @@
 .bg-nav{
-    background-image: url("../../public/assets/pic/bg-nav.png");
-   background-position: center;
+    background-image: url("../../public/assets/pic/bar-bg.png");
+  background-size: cover;
     background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 .bg-foot{
@@ -12,6 +13,7 @@
 .bg-h-bar{
     background-image: url("../../public/assets/pic/bar.png");
     background-position: center;
+    background-size: cover;
     
 }
 
@@ -22,5 +24,34 @@
     border-radius: 10px;
 }
 .bg-roop{
-    background: rgba(0, 0, 0, 0.6);
+    background-image: url("../../public/assets/pic/bar-bg.png");
+    background-position: center;
+    background-size: cover;
 }
+.bg-roopy{
+    background: rgb(255, 255, 255, 0.6);
+   
+    color: transparent;
+
+}
+.bg-classic{
+    background-image: url("../../public/assets/pic/bg-classic.png");
+    background-position: center;
+    background-size: cover;
+}
+.bg-coroop{
+    background: rgba(0, 0, 0, 0.6);
+
+}
+.bg-pop{
+    background-image: url("../../public/assets/pic/bg-pop.png");
+    background-position: center;
+    background-size: cover;
+
+}
+.bg-bu{
+    background-image: url("../../public/assets/pic/bg-bu.png");
+    
+    background-size: cover;
+}
+

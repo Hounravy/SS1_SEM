@@ -1,16 +1,23 @@
 import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
+import { getPlayLink } from '@utilities/dev';
+import { useState } from 'react';
 export default function Home() {
+  const [show, setShow] = useState(false);
+
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
   return (
     <>
+    
       <section className='my-0'>
         <div className='w-full bg-slate-50 my-0'>
           <div className='container-fluid'>
             <div className='flex justify-center'>
-              <h5 className=' text-black text-3xl font-bold'>全天候待命 7 X 24优质安全</h5>
+              <h5 className=' text-black text-lg font-bold sm:text-3xl'>全天候待命 7 X 24优质安全</h5>
             </div>
-            <div className='flex justify-center items-center py-20'>
+            <div className='flex sm:flex-row flex-col justify-center items-center py-20'>
 
               <div className=' bg-white text-black pt-[30px] px-[15px] pb-[15px] m-5'>
                 <div className='flex justify-center items-center flex-col'>
@@ -29,7 +36,7 @@ export default function Home() {
                     <p>付款后马上回调，零等待，专业一步到位</p>
                   </di>
                   <div className='flex items-center text-amber-600 my-[15px] hover:text-amber-400 cursor-pointer'>
-                    <Link href={'/'}>
+                    <Link href={getPlayLink()}>
                     <p>马上转帐 </p>
                     </Link>
                     
@@ -57,7 +64,7 @@ export default function Home() {
                     <p>最快T＋0 特快结算，支持多种结算方式</p>
                   </di>
                   <div className='flex items-center text-amber-600 my-[15px] hover:text-amber-400 cursor-pointer'>
-                    <Link href={'/'}>
+                    <Link href={getPlayLink()}>
                     <p>马上转帐 </p>
                     </Link>
                     
@@ -86,7 +93,7 @@ export default function Home() {
                     <p>多重确认，防止他人轻易修改结算账户</p>
                   </di>
                   <div className='flex items-center text-amber-600 my-[15px] hover:text-amber-400 cursor-pointer'>
-                    <Link href={'/'}>
+                    <Link href={getPlayLink()}>
                     <p>马上转帐 </p>
                     </Link>
                     
@@ -101,11 +108,18 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className='my-0'>
-        <div className='w-full h-36 my-0 bg-foot'>
-      
-        </div>
+      <section className='my-0 bg-white overflow-hidden'>
+      <Link href={getPlayLink()}>
+                <div className='cursor-pointer w-full h-full '>
+                  <Image
+                  src="/assets/pic/site-foot.png"
+                  width={1920}
+                  height={225}
+                  />
+                </div>
+              </Link>
       </section>
+
     </>
   );
 }

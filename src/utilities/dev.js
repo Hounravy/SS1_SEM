@@ -7,4 +7,4 @@ export const getCMSDomain = () => process?.env?.NEXT_PUBLIC_CMS_URL;
 
 export const getGAID = () => process?.env?.NEXT_PUBLIC_GA_ID || '';
 
-export const getPlayLink = () => process?.env?.NEXT_PUBLIC_PLAY_LINK || '/';
+export const getPlayLink = () => process?.env?.NEXT_PUBLIC_PLAY_LINK || 'https://t.me/bjhzfgq';
